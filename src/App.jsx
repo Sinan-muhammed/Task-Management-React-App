@@ -1,10 +1,23 @@
-import React from 'react'
+import ReactDOM from "react-dom/client"
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import DashBoard from "./Dashboard/DashBoard";
+import Tasks from "./Task/Tasks";
 
-const App = () => {
+function App() {
+
   return (
-    <h1 className="text-3xl font-bold underline">
-    Hello world!
-  </h1>
+    <>
+     <BrowserRouter>
+     {/* // DashBoard page router */}
+      <Routes>
+        <Route path="/" element={<DashBoard/>}/>
+      </Routes>
+      {/* // Task Management page  router */} 
+      <Routes>
+      <Route path="/task" element={<Tasks/>}/>
+      </Routes>
+     </BrowserRouter>
+    </>
   )
 }
 
