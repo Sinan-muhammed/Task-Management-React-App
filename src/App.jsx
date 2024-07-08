@@ -10,11 +10,11 @@ function App() {
      <BrowserRouter>
      {/* // DashBoard page router */}
       <Routes>
-        <Route path="/" element={<DashBoard/>}/>
+        <Route path="/" element={<Tasks/>}/>
       </Routes>
       {/* // Task Management page  router */} 
       <Routes>
-      <Route path="/task" element={<Tasks/>}/>
+      <Route path="/task" element={<DashBoard/>}/>
       </Routes>
      </BrowserRouter>
     </>

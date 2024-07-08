@@ -1,6 +1,7 @@
 import React from 'react'
 import Top from './Top'
 import TaskHead from '../Components/TaskHead'
+import Main from './Main'
 
 const Tasks = () => {
   return (
@@ -11,7 +12,9 @@ const Tasks = () => {
        <div>
         <TaskHead/>
        </div>
-        
+        <div>
+          <Main/>
+        </div>
    </div>
   )
 }
