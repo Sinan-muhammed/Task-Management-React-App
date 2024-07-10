@@ -7,9 +7,7 @@ import avatar5 from '../../public/Avatar__Count.png'
 
 
 const TaskHead = () => {
-    const avatars = [
-        avatar,avatar2,avatar3,avatar4
-    ]
+    
   return (
     <div className='h-[70px] w-full bg-[#E6ECF0] flex items-center md:pl-[56px] pl-[12px] md:pr-[56px] pr-[12px] justify-between'>
         <div className="flex gap-[16px] justify-center items-center">
